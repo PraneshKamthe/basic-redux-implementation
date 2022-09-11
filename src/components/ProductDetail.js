@@ -28,7 +28,7 @@ const ProductDetail = () => {
     ).catch((err) => {
       console.log("error -> ", err);
     });
-    console.log("DELTE API CALL -> ", response.data);
+    console.log("DELETE API CALL -> ", response.data);
     dispatch(deleteProducts(response.data));
   };
   useEffect(() => {
@@ -62,10 +62,10 @@ const ProductDetail = () => {
                   </div>
                   <div className="visible content">Add to Cart</div>
                 </div>
-                <br />
+                {/* <br />
                 <div className="ui delete button" tabIndex="0">
                   <div onClick={() => dispatch(deleteProduct())} className="visible content">Delete</div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

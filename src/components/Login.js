@@ -49,8 +49,9 @@ const navigate = useNavigate();
           placeholder="Password"
         ></input>
 
-        <small>{error && "Use Id -> mor_2314 and Pass -> 83r5^_"} </small>
-        <button onClick={loginHandler}>Login</button>
+        <small>{error} </small>
+        <button className="login-btn" onClick={loginHandler}>Login</button>
+        <p>Id: mor_2314 and Password: 83r5^_ </p>
       </div>
     </div>
   );

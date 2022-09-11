@@ -12,11 +12,11 @@ const Header = ({token, setToken}) => {
   }
   if (localStorage.getItem("token")) {
   return (
-   <> <div className="ui fixed menu">
+   <> <div className="ui fixed menu alignments">
       <div className="ui container center">
         <h2> Shop </h2>
       </div>
-        <button onClick={logoutHandler}> Logout </button>   
+        <button className="logout-btn" onClick={logoutHandler}> Logout </button>   
     </div>
       </> 
   );
